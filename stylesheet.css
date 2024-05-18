@@ -6,7 +6,12 @@ body, section, header, div, p, h1, h2, h3, ul, li {
    margin: 0;
    padding: 0;
 }
+section{
+  width:910px; 
+}
+
 body {
+   padding: 40px;
    font-family: 'Open Sans', sans-serif;
    box-sizing: border-box;
    background-color: #e4e7eb;
@@ -23,4 +28,44 @@ h1 {
 }
 
 /* add styles here */
+/* style rules */
+/*inline-block used to bring the three columns together*/
+section{
+    display: inline-block;
+}
+.column{
+    display: inline-block;
+    width:300px;
+    background-color:white;
+}
+.column>h3{
+    text-align: center;
+}
+.column li{
+    font-weight: bold;
+}
+/*A default feature which is applied to every element with class price*/
+/*Here padding options sets padding for top, right, bottom and left*/
+.price{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+}
+/*Using Inheritance to change font-size and weight*/
+.price>span{
+    font-size: 10px;
+    font-weight: normal;
+}
+/*Background colors for prices*/
+.free{
+    background: #5BB189;
+}
+.standard{
+    background: #4B0082;
+}
+.professional{
+    background: #EC632A;
+}
+
 
