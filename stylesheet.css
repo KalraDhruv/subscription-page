@@ -29,9 +29,11 @@ h1 {
 
 /* add styles here */
 /* style rules */
+
 /*inline-block used to bring the three columns together*/
 section{
     display: inline-block;
+    box-shadow: 20px 20px 50px 10px grey;
 }
 .column{
     display: inline-block;
@@ -39,11 +41,23 @@ section{
     background-color:white;
 }
 .column>h3{
+    padding: 10px 0px 10px 0px;
     text-align: center;
 }
 .column li{
-    font-weight: bold;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
 }
+.column li>span{
+    font-weight:bold;
+}
+/*style for Sign Up Button*/
+.column div{
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+
+
 /*A default feature which is applied to every element with class price*/
 /*Here padding options sets padding for top, right, bottom and left*/
 .price{
@@ -52,11 +66,13 @@ section{
     text-align: center;
     padding: 10px 15px 10px 15px;
 }
+
 /*Using Inheritance to change font-size and weight*/
 .price>span{
     font-size: 10px;
     font-weight: normal;
 }
+
 /*Background colors for prices*/
 .free{
     background: #5BB189;
@@ -66,6 +82,17 @@ section{
 }
 .professional{
     background: #EC632A;
+}
+/*Featured column features*/
+.featured{
+    color: white;
+    background: #2F4F4F;
+}
+/*Style for Host in Confidence*/
+#confidence{
+    margin-top: 50px;
+    background:#2F4F4F; 
+   
 }
 
 
