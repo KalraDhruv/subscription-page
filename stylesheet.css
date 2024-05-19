@@ -30,6 +30,11 @@ h1 {
 /* add styles here */
 /* style rules */
 
+/*Remove the bullet points from ul and li*/
+ul{
+    list-style-type:none;
+}
+
 /*inline-block used to bring the three columns together*/
 section{
     display: inline-block;
@@ -43,6 +48,11 @@ section{
 .column>h3{
     padding: 10px 0px 10px 0px;
     text-align: center;
+}
+
+/*Adding alternate coloring to list items using nth-child(even) in column class*/
+.column li:nth-child(even){
+    background:rgba(47,59,64,0.35);
 }
 .column li{
     text-align: center;
@@ -91,8 +101,27 @@ section{
 /*Style for Host in Confidence*/
 #confidence{
     margin-top: 50px;
-    background:#2F4F4F; 
-   
+    font-size: 20px;
+    padding:25px 5px 15px 25px;
+    background-color:#2F4F4F; 
+    width: 63%;
+    height: 100%;
+    color: white;
 }
+#confidence>h2{
+    font-size: 35px;
+}
+/*Adding the image at the place of list bullets in host in confidence*/
+/*The image was added using background image and adding padding to each list element*/
+#confidence li{
+    font-size:15px;
+    font-weight:bold;
+    padding-left:20px;
+    background-image: url(checkmark.svg);
+    background-position: 0px 10px;
+    background-size: 10px 10px;
+    background-repeat:no-repeat;
+}
+
 
 
