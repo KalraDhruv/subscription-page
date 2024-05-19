@@ -62,11 +62,27 @@ section{
     font-weight:bold;
 }
 /*style for Sign Up Button*/
+/*Added hover, background-color, box-shadow and box-radius*/
 .column div{
     text-align: center;
-    padding: 30px 0px 30px 0px;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    background-color: #3A6BA5;
+    margin: 30px 5px 30px 5px;
+    box-shadow: 6px 5px 20px 1px rgba(0,0,0,0.22);
+    border-radius: 5px;
 }
+/*style change on hover*/
+.column div:hover{
+    background-color:#437CBF;
+}
+/*Styling the sign up text on the button*/
+.column a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 
+}
 
 /*A default feature which is applied to every element with class price*/
 /*Here padding options sets padding for top, right, bottom and left*/
@@ -110,13 +126,17 @@ section{
 }
 #confidence>h2{
     font-size: 35px;
+    padding: 5px 0px 10px 0px;
 }
+
 /*Adding the image at the place of list bullets in host in confidence*/
 /*The image was added using background image and adding padding to each list element*/
 #confidence li{
     font-size:15px;
     font-weight:bold;
     padding-left:20px;
+    padding-top:5px;
+    padding-bottom:5px;
     background-image: url(checkmark.svg);
     background-position: 0px 10px;
     background-size: 10px 10px;
